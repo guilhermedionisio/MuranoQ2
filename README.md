@@ -1,6 +1,6 @@
 # Desafio Murano - Questão 2 - Git
 
-Este repositório responde as questões solicitadas sobre os comandos do Git e como sincronizar uma biblioteca compartilhada utilizada por dois projetos de software distintos.
+Este repositório responde as questões solicitadas sobre os comandos do Git, sincronização de Bibliotecas compartilhadas e gerenciamento de Commits.
 
 ## Comandos Git
 
@@ -57,7 +57,7 @@ Para mesclar commits de uma branch alternativa na branch principal, pode-se exec
 
 1. Mudar para a branch alternativa onde o `HEAD` aponta para o commit 8.
 2. `git rebase -i HEAD~4` para selecionar os últimos 4 commits (5, 6, 7, 8).
-3. No editor de texto que será aberto, associar o commit 5 ao tipo `Pick`, pois foi o primeiro commit feito na branch com o objetivo de manter a ordem dos commits. Mescle os commits seguintes com o commit 5, associando-os ao tipo `Squash`.
+3. No editor de texto que será aberto, associar o commit 5 ao tipo `Pick` com o objetivo de manter a ordem dos commits pois este foi o primeiro commit feito na branch. Mesclar os commits seguintes com o commit 5, associando-os ao tipo `Squash`.
 4. Outro editor de texto será aberto para criar a mensagem de commit.
 5. Após concluir essas etapas, o processo de mesclagem de commits é finalizado. Por fim, execute o comando `git merge master` para integrar o commit mesclado da branch alternativa na branch principal.
 6. Resolver qualquer conflito de merge.
